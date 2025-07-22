@@ -1,0 +1,89 @@
+{
+  "intention": [
+    {
+      "label": "Cliquez ici pour définir l'intention puis complétez ou modifiez !",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "label": "Illustrer une idée abstraite",
+      "value": "illustrer-une-idee-abstraite"
+    },
+    {
+      "label": "Créer un personnage original",
+      "value": "creer-un-personnage-original"
+    },
+    {
+      "label": "Représenter une émotion ou un état d’âme",
+      "value": "representer-une-emotion-ou-un-etat-d-ame"
+    },
+    {
+      "label": "Imaginer un monde fictif ou fantastique",
+      "value": "imaginer-un-monde-fictif-ou-fantastique"
+    },
+    {
+      "label": "Générer une scène réaliste du quotidien",
+      "value": "generer-une-scene-realiste-du-quotidien"
+    },
+    {
+      "label": "Créer une image inspirée d’un rêve",
+      "value": "creer-une-image-inspiree-d-un-reve"
+    },
+    {
+      "label": "Représenter un concept éducatif ou scientifique",
+      "value": "representer-un-concept-educatif-ou-scientifique"
+    },
+    {
+      "label": "Mettre en scène une action ou un mouvement",
+      "value": "mettre-en-scene-une-action-ou-un-mouvement"
+    },
+    {
+      "label": "Illustrer une scène historique",
+      "value": "illustrer-une-scene-historique"
+    },
+    {
+      "label": "Créer une image pour un article ou blog",
+      "value": "creer-une-image-pour-un-article-ou-blog"
+    },
+    {
+      "label": "Réaliser un visuel pour les réseaux sociaux",
+      "value": "realiser-un-visuel-pour-les-reseaux-sociaux"
+    },
+    {
+      "label": "Imaginer la couverture d’un roman ou d’un livre",
+      "value": "imaginer-la-couverture-d-un-roman-ou-d-un-livre"
+    },
+    {
+      "label": "Générer une ambiance cinématographique",
+      "value": "generer-une-ambiance-cinematographique"
+    },
+    {
+      "label": "Créer une image publicitaire ou marketing",
+      "value": "creer-une-image-publicitaire-ou-marketing"
+    },
+    {
+      "label": "Créer une vignette YouTube engageante",
+      "value": "creer-une-vignette-youtube-engageante"
+    },
+    {
+      "label": "Fusionner plusieurs styles artistiques",
+      "value": "fusionner-plusieurs-styles-artistiques"
+    },
+    {
+      "label": "Explorer les limites du réalisme",
+      "value": "explorer-les-limites-du-realisme"
+    },
+    {
+      "label": "Créer un décor ou arrière-plan immersif",
+      "value": "creer-un-decor-ou-arriere-plan-immersif"
+    },
+    {
+      "label": "Représenter un objet ou produit avec style",
+      "value": "representer-un-objet-ou-produit-avec-style"
+    },
+    {
+      "label": "Simuler une scène du futur ou de science-fiction",
+      "value": "simuler-une-scene-du-futur-ou-de-science-fiction"
+    }
+  ]
+}

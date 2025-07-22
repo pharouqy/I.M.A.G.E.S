@@ -1,5 +1,3 @@
-
-
 function Banner(props) {
     return (
         <div className="banner">
