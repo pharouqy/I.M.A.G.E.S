@@ -4,7 +4,11 @@ function Modal(props) {
   const [copied, setCopied] = useState(false);
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(JSON.stringify(props.array));
+      const arr = props.array
+        .filter((element) => element !== "")
+        .map((element) => element.split("-").join(" "));
+      arr.unshift("Générer une image avec les mots suivants :");
+      await navigator.clipboard.writeText(arr.join(" "));
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {

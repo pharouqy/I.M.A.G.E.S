@@ -59,14 +59,23 @@ function Home() {
         descriptionS: descriptionS,
       },
     });
-    (intention || descriptionI) &&
-    (motif || descriptionM) &&
-    (ambiance || descriptionA) &&
-    (grain || descriptionG) &&
-    (esthetique || descriptionE) &&
-    (style || descriptionS)
+    intention ||
+    descriptionI ||
+    motif ||
+    descriptionM ||
+    ambiance ||
+    descriptionA ||
+    grain ||
+    descriptionG ||
+    esthetique ||
+    descriptionE ||
+    style ||
+    descriptionS
       ? setShowModal(true)
-      : setShowModal(false);
+      : (setShowModal(false),
+        alert(
+          "S'il vous plait remplissez tous les champs avant de soumettre."
+        ));
     resetForm();
   };
   async function resetForm() {
