@@ -85,5 +85,203 @@
       "label": "Simuler une scène du futur ou de science-fiction",
       "value": "simuler-une-scene-du-futur-ou-de-science-fiction"
     }
+  ],
+  "motif": [
+    {
+      "label": "Cliquez ici pour définir le motif puis complétez ou modifiez !",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "label": "Portrait humain réaliste",
+      "value": "portrait-humain-realiste"
+    },
+    {
+      "label": "Personnage stylisé ou cartoon",
+      "value": "personnage-stylise-ou-cartoon"
+    },
+    { "label": "Animal sauvage", "value": "animal-sauvage" },
+    { "label": "Animal domestique", "value": "animal-domestique" },
+    { "label": "Objet du quotidien", "value": "objet-du-quotidien" },
+    {
+      "label": "Bâtiment ou architecture",
+      "value": "batiment-ou-architecture"
+    },
+    { "label": "Paysage naturel", "value": "paysage-naturel" },
+    { "label": "Ville futuriste", "value": "ville-futuriste" },
+    {
+      "label": "Scène de science-fiction",
+      "value": "scene-de-science-fiction"
+    },
+    {
+      "label": "Vêtement ou tenue de mode",
+      "value": "vetement-ou-tenue-de-mode"
+    },
+    { "label": "Créature fantastique", "value": "creature-fantastique" },
+    { "label": "Robot ou androïde", "value": "robot-ou-androide" },
+    { "label": "Véhicule imaginaire", "value": "vehicule-imaginaire" },
+    {
+      "label": "Symbole ou icône graphique",
+      "value": "symbole-ou-icone-graphique"
+    },
+    {
+      "label": "Accessoire de mode ou bijou",
+      "value": "accessoire-de-mode-ou-bijou"
+    },
+    { "label": "Plante ou fleur", "value": "plante-ou-fleur" },
+    {
+      "label": "Carte ou schéma illustré",
+      "value": "carte-ou-schema-illustre"
+    },
+    { "label": "Tableau abstrait", "value": "tableau-abstrait" },
+    {
+      "label": "Page d’un ancien manuscrit",
+      "value": "page-d-un-ancien-manuscrit"
+    },
+    {
+      "label": "Scène mythologique ou religieuse",
+      "value": "scene-mythologique-ou-religieuse"
+    }
+  ],
+  "ambiance": [
+    {
+      "label": "Cliquez ici pour définir le ambiance puis complétez ou modifiez !",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "label": "Lumineuse et chaleureuse",
+      "value": "lumineuse-et-chaleureuse"
+    },
+    { "label": "Sombre et dramatique", "value": "sombre-et-dramatique" },
+    { "label": "Mystérieuse et brumeuse", "value": "mysterieuse-et-brumeuse" },
+    { "label": "Colorée et joyeuse", "value": "coloree-et-joyeuse" },
+    { "label": "Minimaliste et épurée", "value": "minimaliste-et-epuree" },
+    {
+      "label": "Apocalyptique ou post-apo",
+      "value": "apocalyptique-ou-post-apo"
+    },
+    { "label": "Féérique et magique", "value": "feerique-et-magique" },
+    { "label": "Rétro et nostalgique", "value": "retro-et-nostalgique" },
+    {
+      "label": "Futuriste et technologique",
+      "value": "futuriste-et-technologique"
+    },
+    { "label": "Surréaliste et onirique", "value": "surrealiste-et-onirique" },
+    { "label": "Naturelle et paisible", "value": "naturelle-et-paisible" },
+    { "label": "Étrange et perturbante", "value": "etrange-et-perturbante" },
+    { "label": "Romantique et douce", "value": "romantique-et-douce" },
+    { "label": "Épique et héroïque", "value": "epique-et-heroique" },
+    { "label": "Glaciale et hivernale", "value": "glaciale-et-hivernale" },
+    { "label": "Chaleureuse et estivale", "value": "chaleureuse-et-estivale" },
+    { "label": "Scolaire et sérieuse", "value": "scolaire-et-serieuse" },
+    { "label": "Industrielle et urbaine", "value": "industrielle-et-urbaine" },
+    { "label": "Baroque et chargée", "value": "baroque-et-chargee" },
+    { "label": "Zen et méditative", "value": "zen-et-meditative" }
+  ],
+  "grain": [
+    {
+      "label": "Cliquez ici pour définir le grain puis complétez ou modifiez !",
+      "value": "",
+      "disabled": true
+    },
+    { "label": "Photo ultra-réaliste", "value": "photo-ultra-realiste" },
+    { "label": "Rendu 3D détaillé", "value": "rendu-3d-detaille" },
+    { "label": "Peinture à l'huile", "value": "peinture-a-l-huile" },
+    { "label": "Aquarelle légère", "value": "aquarelle-legere" },
+    { "label": "Crayonné au trait fin", "value": "crayonne-au-trait-fin" },
+    { "label": "Collage numérique", "value": "collage-numerique" },
+    { "label": "Texture granuleuse", "value": "texture-granuleuse" },
+    {
+      "label": "Surface lisse et brillante",
+      "value": "surface-lisse-et-brillante"
+    },
+    { "label": "Effet papier vieilli", "value": "effet-papier-vieilli" },
+    { "label": "Pixel art", "value": "pixel-art" },
+    {
+      "label": "Illustration vectorielle",
+      "value": "illustration-vectorielle"
+    },
+    { "label": "Rendu isométrique", "value": "rendu-isometrique" },
+    { "label": "Sketch rapide", "value": "sketch-rapide" },
+    { "label": "Style BD ou comics", "value": "style-bd-ou-comics" },
+    { "label": "Encre de Chine", "value": "encre-de-chine" },
+    { "label": "Photographie argentique", "value": "photographie-argentique" },
+    { "label": "Rendu cinématographique", "value": "rendu-cinematographique" },
+    { "label": "Low poly stylisé", "value": "low-poly-style" },
+    { "label": "Rendu peint à la main", "value": "rendu-peint-a-la-main" },
+    { "label": "Dessin au fusain", "value": "dessin-au-fusain" }
+  ],
+  "esthetique": [
+    {
+      "label": "Cliquez ici pour définir l'esthétique puis complétez ou modifiez !",
+      "value": "",
+      "disabled": true
+    },
+    { "label": "Impressionnisme", "value": "impressionnisme" },
+    { "label": "Surréalisme", "value": "surrealisme" },
+    { "label": "Art déco", "value": "art-deco" },
+    { "label": "Rococo", "value": "rococo" },
+    { "label": "Baroque", "value": "baroque" },
+    { "label": "Style cyberpunk", "value": "style-cyberpunk" },
+    { "label": "Vaporwave", "value": "vaporwave" },
+    {
+      "label": "Style japonais traditionnel",
+      "value": "style-japonais-traditionnel"
+    },
+    {
+      "label": "Minimalisme contemporain",
+      "value": "minimalisme-contemporain"
+    },
+    { "label": "Esthétique steampunk", "value": "esthetique-steampunk" },
+    { "label": "Manga ou anime", "value": "manga-ou-anime" },
+    { "label": "Pop art", "value": "pop-art" },
+    { "label": "Grunge", "value": "grunge" },
+    { "label": "Noir et blanc classique", "value": "noir-et-blanc-classique" },
+    { "label": "Futurisme digital", "value": "futurisme-digital" },
+    { "label": "Esthétique médiévale", "value": "esthetique-medievale" },
+    { "label": "Look années 80", "value": "look-annees-80" },
+    { "label": "Style Renaissance", "value": "style-renaissance" },
+    { "label": "Esthétique gothique", "value": "esthetique-gothique" },
+    { "label": "Style cartoon occidental", "value": "style-cartoon-occidental" }
+  ],
+  "style": [
+    {
+      "label": "Cliquez ici pour définir le style puis complétez ou modifiez !",
+      "value": "",
+      "disabled": true
+    },
+    { "label": "Affiche publicitaire", "value": "affiche-publicitaire" },
+    { "label": "Concept art", "value": "concept-art" },
+    { "label": "Illustration de livre", "value": "illustration-de-livre" },
+    {
+      "label": "Storyboard cinématographique",
+      "value": "storyboard-cinematographique"
+    },
+    { "label": "Portrait centré", "value": "portrait-centre" },
+    { "label": "Plan large panoramique", "value": "plan-large-panoramique" },
+    { "label": "Vignette YouTube", "value": "vignette-youtube" },
+    { "label": "Croquis de mode", "value": "croquis-de-mode" },
+    { "label": "Page de bande dessinée", "value": "page-de-bande-dessinee" },
+    { "label": "Mockup produit", "value": "mockup-produit" },
+    { "label": "Design UI (interface)", "value": "design-ui-interface" },
+    { "label": "Photo de magazine", "value": "photo-de-magazine" },
+    { "label": "Couverture de roman", "value": "couverture-de-roman" },
+    { "label": "Miniature de jeu vidéo", "value": "miniature-de-jeu-video" },
+    { "label": "Plan architectural", "value": "plan-architectural" },
+    { "label": "Affiche de film", "value": "affiche-de-film" },
+    {
+      "label": "Page d’encyclopédie illustrée",
+      "value": "page-d-encyclopedie-illustree"
+    },
+    {
+      "label": "Carte postale artistique",
+      "value": "carte-postale-artistique"
+    },
+    {
+      "label": "Design de couverture musicale",
+      "value": "design-de-couverture-musicale"
+    },
+    { "label": "Poster événementiel", "value": "poster-evenementiel" }
   ]
 }

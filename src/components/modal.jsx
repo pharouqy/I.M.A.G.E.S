@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 
 function Modal(props) {
-  const [formData, setFormData] = useState(props.array);
-  console.log(props.array);
   const [copied, setCopied] = useState(false);
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(JSON.stringify(formData));
-      setFormData(props.array);
+      await navigator.clipboard.writeText(JSON.stringify(props.array));
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -23,6 +20,16 @@ function Modal(props) {
           <div key={index}>
             <p>{action.intention}</p>
             <p>{action.descriptionI}</p>
+            <p>{action.motif}</p>
+            <p>{action.descriptionM}</p>
+            <p>{action.ambiance}</p>
+            <p>{action.descriptionA}</p>
+            <p>{action.grain}</p>
+            <p>{action.descriptionG}</p>
+            <p>{action.esthetique}</p>
+            <p>{action.descriptionE}</p>
+            <p>{action.style}</p>
+            <p>{action.descriptionS}</p>
             <button onClick={handleCopy}>
               {copied ? "Copied!" : "Copy Data"}
             </button>
