@@ -1,0 +1,32 @@
+@import "_variables.scss";
+
+button {
+  background-color: $apricot; /* Green */
+  border: none;
+  color: $vanilla;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 49%;
+  &:hover {
+    background-color: $vanilla;
+    color: $apricot;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid $apricot;
+  }
+  &:active {
+    background-color: $atomic-tangerine;
+    color: $vanilla;
+  }
+  @media all and (max-width: 433px) {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}

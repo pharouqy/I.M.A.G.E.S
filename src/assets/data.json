@@ -1,7 +1,7 @@
 {
   "intention": [
     {
-      "label": "Cliquez ici pour définir l'intention puis complétez ou modifiez !",
+      "label": "Cliquez ici pour définir l'intention ou mettez la vôtre et modifiez !",
       "value": "",
       "disabled": true
     },
@@ -88,7 +88,7 @@
   ],
   "motif": [
     {
-      "label": "Cliquez ici pour définir le motif puis complétez ou modifiez !",
+      "label": "Cliquez ici pour définir le motif ou mettez le vôtre et modifiez !",
       "value": "",
       "disabled": true
     },
@@ -145,7 +145,7 @@
   ],
   "ambiance": [
     {
-      "label": "Cliquez ici pour définir le ambiance puis complétez ou modifiez !",
+      "label": "Cliquez ici pour définir l'ambiance ou mettez la vôtre et modifiez !",
       "value": "",
       "disabled": true
     },
@@ -181,7 +181,7 @@
   ],
   "grain": [
     {
-      "label": "Cliquez ici pour définir le grain puis complétez ou modifiez !",
+      "label": "Cliquez ici pour définir le grain ou mettez le vôtre et modifiez !",
       "value": "",
       "disabled": true
     },
@@ -214,7 +214,7 @@
   ],
   "esthetique": [
     {
-      "label": "Cliquez ici pour définir l'esthétique puis complétez ou modifiez !",
+      "label": "Cliquez ici pour définir l'esthétique ou mettez la vôtre et modifiez !",
       "value": "",
       "disabled": true
     },
@@ -247,7 +247,7 @@
   ],
   "style": [
     {
-      "label": "Cliquez ici pour définir le style puis complétez ou modifiez !",
+      "label": "Cliquez ici pour définir le style ou mettez le vôtre et modifiez !",
       "value": "",
       "disabled": true
     },

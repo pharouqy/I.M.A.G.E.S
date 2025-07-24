@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+@import "_variables.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $tea-green;
+  color: $coral-pink;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Winky Rough", "Courier New", Courier, monospace;
+  main {
+    padding: 20px;
+    form {
+      max-width: 800px;
+      margin: 0 auto;
+      div.form-group {
+        margin-bottom: 15px;
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+          color: $atomic-tangerine;
+          font-size: clamp(1rem, 4vw + 0.5rem, 3rem);
+          text-align: center;
+        }
+        select,
+        option,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid $tea-green;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

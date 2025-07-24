@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Banner from "../components/banner";
 import Select from "../components/select";
 import TextArea from "../components/textArea";
 import Modal from "../components/modal";
+import Button from "../components/button";
 import data from "../assets/data.json";
+import "../styles/_main.scss";
 
 function Home() {
   const [intention, setIntention] = useState("");
@@ -28,8 +30,8 @@ function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormData({
-      title: "Form Submission",
-      content: "Form data submitted successfully",
+      title: "Résultats de la soumission",
+      content: "Les données du formulaire ont été soumises avec succès",
       array: [
         intention,
         descriptionI,
@@ -99,133 +101,132 @@ function Home() {
         title="Assistant d'instruction générative (prompt)"
         subtitle="I.M.A.G.E.S"
       />
-      <form className="content">
-        <div className="form-group">
-          <Select
-            id="intention"
-            label="intention"
-            value={intention}
-            onChange={(e) => (
-              setIntention(e.target.value), setDescriptionI("")
-            )}
-            options={data.intention}
+      <main>
+        <form className="content">
+          <div className="form-group">
+            <Select
+              id="intention"
+              label="intention"
+              value={intention}
+              onChange={(e) => (
+                setIntention(e.target.value), setDescriptionI("")
+              )}
+              options={data.intention}
+            />
+            <TextArea
+              id="descriptionI"
+              value={descriptionI}
+              onChange={(e) => (
+                setDescriptionI(e.target.value), setIntention("")
+              )}
+              placeholder="Détermine le but de l’image : Illustrer une émotion, transmettre une idée, capturer une ambiance ..."
+            />
+          </div>
+          <div className="form-group">
+            <Select
+              id="motif"
+              label="Motif"
+              value={motif}
+              onChange={(e) => (setMotif(e.target.value), setDescriptionM(""))}
+              options={data.motif}
+            />
+            <TextArea
+              id="descriptionM"
+              value={descriptionM}
+              onChange={(e) => (setDescriptionM(e.target.value), setMotif(""))}
+              placeholder="Personnage, objet, scène, action. Plus c’est précis, mieux l’IA pourra cibler le résultat ..."
+            />
+          </div>
+          <div className="form-group">
+            <Select
+              id="ambiance"
+              label="Ambiance"
+              value={ambiance}
+              onChange={(e) => (
+                setAmbiance(e.target.value), setDescriptionA("")
+              )}
+              options={data.ambiance}
+            />
+            <TextArea
+              id="descriptionA"
+              value={descriptionA}
+              onChange={(e) => (
+                setDescriptionA(e.target.value), setAmbiance("")
+              )}
+              placeholder="L’atmosphère générale, les émotions que l’image doit évoquer ..."
+            />
+          </div>
+          <div className="form-group">
+            <Select
+              id="grain"
+              label="Grain"
+              value={grain}
+              onChange={(e) => (setGrain(e.target.value), setDescriptionG(""))}
+              options={data.grain}
+            />
+            <TextArea
+              id="descriptionG"
+              value={descriptionG}
+              onChange={(e) => (setDescriptionG(e.target.value), setGrain(""))}
+              placeholder="Le niveau de détail et de réalisme : minimaliste, hyperréaliste, peinture à l’huile, photo granuleuse, etc ..."
+            />
+          </div>
+          <div className="form-group">
+            <Select
+              id="esthetique"
+              label="Esthétique"
+              value={esthetique}
+              onChange={(e) => (
+                setEsthetique(e.target.value), setDescriptionE("")
+              )}
+              options={data.esthetique}
+            />
+            <TextArea
+              id="descriptionE"
+              value={descriptionE}
+              onChange={(e) => (
+                setDescriptionE(e.target.value), setEsthetique("")
+              )}
+              placeholder="La composition visuelle : disposition, angle, cadrage, lumière, profondeur ..."
+            />
+          </div>
+          <div className="form-group">
+            <Select
+              id="style"
+              label="Style"
+              value={style}
+              onChange={(e) => (setStyle(e.target.value), setDescriptionS(""))}
+              options={data.style}
+            />
+            <TextArea
+              id="descriptionS"
+              value={descriptionS}
+              onChange={(e) => (setDescriptionS(e.target.value), setStyle(""))}
+              placeholder="Le genre artistique ou l’inspiration visuelle : manga, surréaliste, futuriste, impressionniste, etc ..."
+            />
+          </div>
+          <div>
+            <Button type="submit" onClick={handleSubmit}>
+              Valider
+            </Button>
+            <Button type="button" onClick={resetForm}>
+              Réinitialiser
+            </Button>
+          </div>
+        </form>
+        {showModal && (
+          <Modal
+            title={formData.title}
+            content={formData.content}
+            array={formData.array}
+            actions={[formData.actions]}
+            onClose={() => setShowModal(false)}
           />
-          <TextArea
-            id="descriptionI"
-            label="DescriptionI"
-            value={descriptionI}
-            onChange={(e) => (
-              setDescriptionI(e.target.value), setIntention("")
-            )}
-            placeholder="Détermine le but de l’image : Illustrer une émotion, transmettre une idée, capturer une ambiance ..."
-          />
-        </div>
-        <div className="form-group">
-          <Select
-            id="motif"
-            label="Motif"
-            value={motif}
-            onChange={(e) => (setMotif(e.target.value), setDescriptionM(""))}
-            options={data.motif}
-          />
-          <TextArea
-            id="descriptionM"
-            label="DescriptionM"
-            value={descriptionM}
-            onChange={(e) => (setDescriptionM(e.target.value), setMotif(""))}
-            placeholder="Personnage, objet, scène, action. Plus c’est précis, mieux l’IA pourra cibler le résultat ..."
-          />
-        </div>
-        <div className="form-group">
-          <Select
-            id="ambiance"
-            label="Ambiance"
-            value={ambiance}
-            onChange={(e) => (setAmbiance(e.target.value), setDescriptionA(""))}
-            options={data.ambiance}
-          />
-          <TextArea
-            id="descriptionA"
-            label="DescriptionA"
-            value={descriptionA}
-            onChange={(e) => (setDescriptionA(e.target.value), setAmbiance(""))}
-            placeholder="L’atmosphère générale, les émotions que l’image doit évoquer ..."
-          />
-        </div>
-        <div className="form-group">
-          <Select
-            id="grain"
-            label="Grain"
-            value={grain}
-            onChange={(e) => (setGrain(e.target.value), setDescriptionG(""))}
-            options={data.grain}
-          />
-          <TextArea
-            id="descriptionG"
-            label="DescriptionG"
-            value={descriptionG}
-            onChange={(e) => (setDescriptionG(e.target.value), setGrain(""))}
-            placeholder="Le niveau de détail et de réalisme : minimaliste, hyperréaliste, peinture à l’huile, photo granuleuse, etc ..."
-          />
-        </div>
-        <div className="form-group">
-          <Select
-            id="esthetique"
-            label="Esthétique"
-            value={esthetique}
-            onChange={(e) => (
-              setEsthetique(e.target.value), setDescriptionE("")
-            )}
-            options={data.esthetique}
-          />
-          <TextArea
-            id="descriptionE"
-            label="DescriptionE"
-            value={descriptionE}
-            onChange={(e) => (
-              setDescriptionE(e.target.value), setEsthetique("")
-            )}
-            placeholder="La composition visuelle : disposition, angle, cadrage, lumière, profondeur ..."
-          />
-        </div>
-        <div className="form-group">
-          <Select
-            id="style"
-            label="Style"
-            value={style}
-            onChange={(e) => (setStyle(e.target.value), setDescriptionS(""))}
-            options={data.style}
-          />
-          <TextArea
-            id="descriptionS"
-            label="DescriptionS"
-            value={descriptionS}
-            onChange={(e) => (setDescriptionS(e.target.value), setStyle(""))}
-            placeholder="Le genre artistique ou l’inspiration visuelle : manga, surréaliste, futuriste, impressionniste, etc ..."
-          />
-        </div>
-        <div>
-          <button
-            type="submit"
-            className="submit-button"
-            onClick={handleSubmit}
-          >
-            Submit
-          </button>
-          <button type="button" className="reset-button" onClick={resetForm}>
-            Reset
-          </button>
-        </div>
-      </form>
-      {showModal && (
-        <Modal
-          title={formData.title}
-          content={formData.content}
-          array={formData.array}
-          actions={[formData.actions]}
-          onClose={() => setShowModal(false)}
-        />
-      )}
+        )}
+      </main>
+      <footer>
+        <p>&copy; {new Date().getFullYear()} I.M.A.G.E.S. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
