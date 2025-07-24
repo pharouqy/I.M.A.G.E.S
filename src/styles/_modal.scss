@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@use "_variables";
 
 aside {
   position: fixed;
@@ -15,7 +15,7 @@ aside {
     display: none;
   }
   div.modal {
-    background-color: $vanilla;
+    background-color: variables.$vanilla;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -25,16 +25,16 @@ aside {
     h2 {
       font-family: "Winky Rough", sans-serif;
       font-weight: 300;
-      color: $coral-pink;
+      color: variables.$coral-pink;
     }
     p {
       font-family: "Bitcount Prop Double", sans-serif;
-      color: $atomic-tangerine;
+      color: variables.$atomic-tangerine;
     }
     h3 {
       font-size: 1.5rem;
       font-weight: 300;
-      border: 1px solid $atomic-tangerine;
+      border: 1px solid variables.$atomic-tangerine;
       padding: 5px;
       border-radius: 4px;
       margin: 10px 0;

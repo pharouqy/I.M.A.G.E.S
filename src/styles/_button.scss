@@ -1,9 +1,9 @@
-@import "_variables.scss";
+@use "_variables.scss";
 
 button {
-  background-color: $apricot; /* Green */
+  background-color: variables.$apricot;
   border: none;
-  color: $vanilla;
+  color: variables.$vanilla;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -14,15 +14,15 @@ button {
   border-radius: 12px;
   width: 49%;
   &:hover {
-    background-color: $vanilla;
-    color: $apricot;
+    background-color: variables.$vanilla;
+    color: variables.$apricot;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 1px solid $apricot;
+    border: 1px solid variables.$apricot;
   }
   &:active {
-    background-color: $atomic-tangerine;
-    color: $vanilla;
+    background-color: variables.$atomic-tangerine;
+    color: variables.$vanilla;
   }
   @media all and (max-width: 433px) {
     width: 100%;

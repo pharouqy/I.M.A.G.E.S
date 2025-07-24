@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@use "_variables";
 
 header {
   text-align: center;
@@ -6,12 +6,12 @@ header {
     font-family: "Bitcount Prop Double", sans-serif;
     font-weight: 700;
     font-size: clamp(1rem, 2vw + 0.5rem, 5rem);
-    color: $atomic-tangerine;
+    color: variables.$atomic-tangerine;
   }
   h2 {
     font-family: "Winky Rough", sans-serif;
     font-weight: 300;
     font-size: clamp(2rem, 4vw + 1rem, 4rem);
-    color: $coral-pink;
+    color: variables.$coral-pink;
   }
 }
