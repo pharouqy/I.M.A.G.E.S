@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Banner from "../components/banner";
-import Select from "../components/select";
-import TextArea from "../components/textArea";
-import Modal from "../components/modal";
-import Button from "../components/button";
+import { useState } from "react";
+import Banner from "../components/Banner.jsx";
+import Select from "../components/Select.jsx";
+import TextArea from "../components/TextArea.jsx";
+import Modal from "../components/Modal.jsx";
+import Button from "../components/Button.jsx";
 import data from "../assets/data.json";
 import "../styles/_main.scss";
 

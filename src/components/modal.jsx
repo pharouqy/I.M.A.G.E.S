@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../components/button";
+import Button from "./button";
 
 function Modal(props) {
   const [copied, setCopied] = useState(false);
