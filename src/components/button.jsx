@@ -1,4 +1,4 @@
-import "../styles/_button.scss";
+import "@/styles/_button.scss";
 
 function Button({ type, onClick, children }) {
   return (
