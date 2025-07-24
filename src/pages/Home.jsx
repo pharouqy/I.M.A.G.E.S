@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Banner from "@/components/Banner";
-import Select from "@/components/Select";
-import TextArea from "@/components/TextArea";
-import Modal from "@/components/Modal";
-import Button from "@/components/Button";
-import data from "@/assets/data";
+import Banner from "@/components/Banner.jsx";
+import Select from "@/components/Select.jsx";
+import TextArea from "@/components/TextArea.jsx";
+import Modal from "@/components/Modal.jsx";
+import Button from "@/components/Button.jsx";
+import data from "@/assets/data.json";
 import "@/styles/_main.scss";
 
 function Home() {
