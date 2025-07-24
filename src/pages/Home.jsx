@@ -30,8 +30,8 @@ function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormData({
-      title: "Résultats de la soumission",
-      content: "Les données du formulaire ont été soumises avec succès",
+      title: "Méthode I.M.A.G.E.S",
+      content: "Voici les détails de votre prompt I.M.A.G.E.S :",
       array: [
         intention,
         descriptionI,

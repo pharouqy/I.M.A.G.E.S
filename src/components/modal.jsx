@@ -21,6 +21,13 @@ function Modal(props) {
       console.error("Error copying text: ", err);
     }
   };
+  const updatedData = Object.fromEntries(
+    Object.entries(props.actions).map(([key, value]) => [
+      key,
+      value && typeof value === "string" ? value.replace(/-/, " ") : value,
+    ])
+  );
+  console.log("Updated Data:", updatedData);
   return (
     <aside className="modal-overlay" onClick={handleAsideClick}>
       <div className="modal">
