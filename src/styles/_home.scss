@@ -44,9 +44,11 @@ body {
         textarea {
           width: 100%;
           padding: 10px;
-          border: 1px solid variables.$tea-green;
+          border: 1px solid variables.$atomic-tangerine;
           border-radius: 4px;
           font-size: clamp(1rem, 0.5vw + 0.5rem, 3rem);
+          background-color: variables.$vanilla;
+          color: variables.$coral-pink;
         }
       }
     }
