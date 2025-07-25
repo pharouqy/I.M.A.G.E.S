@@ -30,3 +30,32 @@ button {
     font-size: 14px;
   }
 }
+
+/* Cibler la scrollbar */
+::-webkit-scrollbar {
+  width: 15px; /* ou height: 12px; pour scroll horizontal */
+}
+
+/* Fond de la scrollbar */
+::-webkit-scrollbar-track {
+  background: variables.$vanilla;
+  border-radius: 10px;
+}
+
+/* Curseur (la partie mobile) */
+::-webkit-scrollbar-thumb {
+  background-color: variables.$atomic-tangerine;
+  border-radius: 10px;
+  border: 3px solid variables.$vanilla; /* Espace autour du thumb */
+}
+
+/* Curseur au survol */
+::-webkit-scrollbar-thumb:hover {
+  background-color: variables.$atomic-tangerine;
+}
+
+/* Firefox uniquement */
+* {
+  scrollbar-width: auto; /* auto | thin | none */
+  scrollbar-color: variables.$atomic-tangerine variables.$vanilla; /* thumb couleur | track couleur */
+}
